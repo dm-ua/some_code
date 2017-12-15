@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="279.0" prefWidth="496.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.logInWindow.LoginController">
+   <children>
+      <ImageView fitHeight="283.0" fitWidth="589.0" layoutX="-4.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="-2.0" AnchorPane.leftAnchor="-4.0" AnchorPane.rightAnchor="-3.111114501953125" AnchorPane.topAnchor="-2.0">
+         <image>
+            <Image url="@../../../3b974acce0399a541d294f7a085869b6.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="loginButton" layoutX="251.0" layoutY="226.0" mnemonicParsing="false" onAction="#handleLogin" text="Готово">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Label layoutX="219.0" layoutY="171.0" text="Пароль:" textFill="#c52525">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="232.0" layoutY="121.0" text="Ім'я:" textFill="#c52525">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="13.0" text="Діамант group" textFill="#901717">
+         <font>
+            <Font name="Vrinda" size="67.0" />
+         </font>
+      </Label>
+      <TextField fx:id="loginField" layoutX="170.0" layoutY="138.0" promptText="Name:" />
+      <PasswordField fx:id="passwordField" layoutX="173.0" layoutY="192.0" promptText="Password:" />
+      <Button fx:id="cancelButton" layoutY="253.0" mnemonicParsing="false" onAction="#handleCancel" text="Відміна" />
+   </children>
+</AnchorPane>
